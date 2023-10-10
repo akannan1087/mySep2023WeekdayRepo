@@ -4,6 +4,6 @@
 	<title>My Web App </title>
 </head>
 <body>
-	<h2> Developer fixing defects foubd by Sonar as part of CICD!!!!!!</h2>
+	<h2> We are implementing Scripted pipeline using Jenkins for deploying our App into DEV, QA and PROD environments !!!!!!</h2>
 </body>
 </html>
