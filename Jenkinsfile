@@ -50,7 +50,6 @@ pipeline {
         
         //CD starts here..
         
-
     stage ("DEV approve") {
         steps {
             echo "Taking approval from DEV Manager for QA Deployment"     
@@ -89,7 +88,7 @@ pipeline {
     
     stage ("PO notify") {
          steps {
-         slackSend channel: 'my-sep-2023-weekday-batch,qa-testing-team,product-owners-teams', message: 'Business users - prod deployment is done, please validte and inform end customers'
+         slackSend channel: 'qa-testing-team,product-owners-teams', message: 'Business users - prod deployment is done, please validte and inform end customers'
         }
       }
         
