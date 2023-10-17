@@ -2,12 +2,7 @@ pipeline {
     agent any
     
     stages {
-       stage ("checkout") {
-           steps {
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '6aff6cd1-5848-4211-bfff-afcd6b4043d8', url: 'https://github.com/akannan1087/mySep2023WeekdayRepo']])
-           }
-       }
-       
+    
        stage ("Build") {
            steps {
                 sh "mvn clean install -f MyPhoenixApp/pom.xml"   
