@@ -44,10 +44,12 @@ stages:
 
     - upload: $(Build.ArtifactStagingDirectory)
       artifact: drop
-    - task: ArtifactoryGenericUpload@2
+
+    - task: JFrogGenericArtifacts@1
       inputs:
+        command: 'Upload'
+        connection: 'Arti'
         specSource: 'taskConfiguration'
-        artifactoryService: Arti
         fileSpec: |
           {
             "files": [
