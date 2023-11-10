@@ -9,7 +9,7 @@ trigger:
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'c7a35abb-6a9d-4d9d-b148-31d41873c6d4'
+  azureSubscription: 'XXXX'
 
   # Web app name
   webAppName: 'MyPhoenixApp'
