@@ -21,6 +21,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <finalName>MyPhoenixApp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -32,7 +34,5 @@
                 </configuration>
             </plugin>
         </plugins>
-  <build>
-    <finalName>MyPhoenixApp</finalName>
   </build>
 </project>
