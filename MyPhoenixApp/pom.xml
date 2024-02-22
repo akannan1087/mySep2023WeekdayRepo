@@ -14,6 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+  <dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-war-plugin</artifactId>
+  <version>3.4.1-SNAPSHOT</version>
+  <type>maven-plugin</type>
+</dependency>
   </dependencies>
   <build>
     <finalName>MyPhoenixApp</finalName>
